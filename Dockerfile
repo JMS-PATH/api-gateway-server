@@ -8,4 +8,3 @@ COPY ${JAR_FILE} app.jar
 EXPOSE 8096
 
 ENTRYPOINT ["java","-jar","/app.jar"]
-HEALTHCHECK --interval=15s CMD curl --fail http://localhost:8096/actuator/health || exit 1
