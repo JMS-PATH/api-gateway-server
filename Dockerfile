@@ -7,4 +7,4 @@ COPY ${JAR_FILE} app.jar
 
 EXPOSE 8096
 
-ENTRYPOINT ["java","-jar","app.jar"]
+ENTRYPOINT ["java","-jar","/app.jar"]
