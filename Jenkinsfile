@@ -31,7 +31,7 @@ pipeline {
                         version = version.replace("-SNAPSHOT", "")+"-test"
                     }
                     else if (branchName.startsWith("hotfix/") || branchName.startsWith("feature/")){
-                       version = version.replace("-SNAPSHOT", "")+branchName.replaceFirst(/^(hotfix\/|feature\/)/, "")+"-fh"
+                       version = version.replace("-SNAPSHOT", "-")+branchName.replaceFirst(/^(hotfix\/|feature\/)/, "")+"-fh"
                     }
                     else {
                         version = version+"-dev"
