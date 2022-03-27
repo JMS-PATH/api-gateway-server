@@ -44,7 +44,7 @@ pipeline {
             steps {
                 echo "Version is ${version}"
                 echo "Building Maven Project"
-                sh "mvn clean package"
+                sh "mvn clean install"
             }
         }
 
